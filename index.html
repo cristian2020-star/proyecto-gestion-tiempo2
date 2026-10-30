@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión del Tiempo y Matemáticas | TSG Cardenal Sancha 2026</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#0f172a',
+                        brandBlue: '#1e3a8a',
+                        brandLight: '#f8fafc',
+                        brandAccent: '#2563eb',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brandLight text-gray-800 font-sans leading-relaxed">
+
+    <!-- Barra de Navegación Fija -->
+    <header class="bg-brandDark text-white sticky top-0 z-50 shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="bg-brandAccent text-white font-bold px-3 py-1 rounded-md text-sm">11A</span>
+                <span class="font-bold tracking-wide text-sm md:text-base">Colegio Cardenal Sancha</span>
+            </div>
+            <nav class="hidden lg:flex space-x-4 text-xs font-medium uppercase tracking-wider">
+                <a href="#inicio" class="hover:text-brandAccent transition">Inicio</a>
+                <a href="#problema" class="hover:text-brandAccent transition">Problema</a>
+                <a href="#objetivos" class="hover:text-brandAccent transition">Objetivos</a>
+                <a href="#estado-arte" class="hover:text-brandAccent transition">Estado del Arte</a>
+                <a href="#marco" class="hover:text-brandAccent transition">Marco Teórico</a>
+                <a href="#metodologia" class="hover:text-brandAccent transition">Metodología</a>
+                <a href="#resultados" class="hover:text-brandAccent transition">Resultados</a>
+                <a href="#consejos" class="hover:text-brandAccent transition font-bold text-blue-400">10 Consejos</a>
+                <a href="#recursos" class="hover:text-brandAccent transition">Recursos</a>
+                <a href="#experiencia" class="hover:text-brandAccent transition">Experiencia</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Principal (Hero) -->
+    <section id="inicio" class="relative bg-gradient-to-br from-blue-950 via-brandBlue to-blue-900 text-white py-24 px-4 text-center overflow-hidden">
+        <div class="absolute inset-0 opacity-15 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&q=80&w=1600');"></div>
+        <div class="relative max-w-4xl mx-auto z-10">
+            <span class="bg-blue-800/80 text-blue-200 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider border border-blue-700">Trabajo Significativo de Grado • 2026</span>
+            <h1 class="text-3xl md:text-5xl font-extrabold mt-6 mb-4 leading-tight">
+                El Impacto de la Gestión Adecuada del Tiempo en el Desarrollo de la Asignatura de Matemáticas
+            </h1>
+            <p class="text-base md:text-lg text-blue-100 max-w-2xl mx-auto mb-8">
+                Un análisis profundo sobre la procrastinación, el uso de dispositivos y la planificación en los estudiantes de grado décimo.
+            </p>
+            <div class="bg-blue-900/80 backdrop-blur-md p-6 rounded-2xl border border-blue-700 max-w-2xl mx-auto text-sm grid grid-cols-1 md:grid-cols-2 gap-4 text-left shadow-xl">
+                <div><strong>Estudiantes Investigadores:</strong><br> Cristian Camilo Barrero Sánchez y Juan José Jagua González</div>
+                <div><strong>Curso y Sede:</strong> Grado 11A, Colegio Cardenal Sancha, Bogotá</div>
+                <div><strong>Docentes Asesores:</strong> María Isabel Vargas y John Luis Carreño</div>
+                <div><strong>Institución:</strong> Colegio Cardenal Sancha</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Descripción y Planteamiento del Problema -->
+    <section id="problema" class="max-w-6xl mx-auto py-16 px-4">
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 md:p-12 overflow-hidden">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-bold text-brandBlue mb-6 flex items-center">
+                        <span class="bg-blue-100 text-brandBlue p-2 rounded-xl mr-3 text-xl"></span> 1. Planteamiento del Problema
+                    </h2>
+                    <p class="text-gray-600 mb-4 text-sm md:text-base">
+                        La investigación surge ante la necesidad de identificar cómo los estudiantes de grado décimo gestionan su tiempo en función de la asignatura de matemáticas (trigonometría). Se selecciona este grado por la alta carga académica y porque los jóvenes se encuentran en una etapa donde el uso desmedido de dispositivos electrónicos es crítico, derivando en la procrastinación.
+                    </p>
+                    <p class="text-gray-600 text-sm md:text-base">
+                        A pesar de contar con las capacidades cognitivas necesarias, se observan altos niveles de estrés y acumulación de trabajos debido a una deficiente planificación.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&q=80&w=800" alt="Estudiante planificando y estudiando matemáticas" class="rounded-xl shadow-md border border-gray-100 w-full h-64 object-cover">
+                </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6 mt-8">
+                <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                    <h3 class="font-bold text-brandBlue mb-2 text-lg">Pregunta de Investigación</h3>
+                    <p class="text-sm text-gray-700 italic">¿Qué estrategias de gestión del tiempo son más pertinentes para el desarrollo práctico de la asignatura de Matemáticas en los estudiantes de grado décimo del Colegio Cardenal Sancha?</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-xl border border-blue-100">
+                    <h3 class="font-bold text-brandBlue mb-2 text-lg">Justificación del Estudio</h3>
+                    <p class="text-sm text-gray-700">Se justifica por la necesidad de evaluar si las técnicas de aprendizaje logran un equilibrio entre la organización del tiempo, el rendimiento en trigonometría y el ocio personal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Objetivos -->
+    <section id="objetivos" class="bg-gray-100 py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-brandBlue mb-8 text-center"> 2. Objetivos de la Investigación</h2>
+            <div class="grid md:grid-cols-2 gap-6 items-stretch">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-bold text-lg text-brandBlue mb-3">Objetivo General</h3>
+                        <p class="text-gray-600 text-sm mb-4">Determinar las estrategias de gestión del tiempo más pertinentes en el desarrollo práctico en la asignatura de Matemáticas en los estudiantes de grado décimo.</p>
+                    </div>
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=600" alt="Estrategia y planeación" class="rounded-lg h-40 object-cover mt-2">
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <h3 class="font-bold text-lg text-brandBlue mb-3">Objetivos Específicos</h3>
+                        <ul class="text-gray-600 text-sm space-y-2 list-disc pl-5">
+                            <li>Identificar dificultades asociadas a la deficiente gestión del tiempo que afectan la obtención de conocimiento matemático.</li>
+                            <li>Analizar las estrategias aplicadas por los estudiantes para la gestión adecuada de su tiempo.</li>
+                            <li>Relacionar los hábitos de tiempo con el cumplimiento de actividades propuestas para matemáticas.</li>
+                            <li>Proponer estrategias y herramientas prácticas para mejorar la gestión del tiempo en el área de matemáticas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estado del Arte -->
+    <section id="estado-arte" class="max-w-6xl mx-auto py-16 px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-brandBlue mb-4 text-center"> 3. Estado del Arte </h2>
+        <p class="text-center text-gray-600 mb-10 text-sm">Se analizaron 8 fuentes bibliográficas fundamentales para estructurar el marco conceptual del proyecto:</p>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <span class="text-xs font-bold text-brandAccent bg-blue-50 px-2 py-1 rounded">Ítem 1 (2026)</span>
+                <h3 class="font-bold text-brandBlue mt-2 mb-1">González Cueva et al.</h3>
+                <p class="text-xs text-gray-500 mb-2">UNEMI</p>
+                <p class="text-xs text-gray-600">Demuestra que el uso desmedido de tecnologías y pantallas sin supervisión familiar afecta negativamente el rendimiento académico y la concentración.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <span class="text-xs font-bold text-brandAccent bg-blue-50 px-2 py-1 rounded">Ítem 2 (2021)</span>
+                <h3 class="font-bold text-brandBlue mt-2 mb-1">Harvard Business Review</h3>
+                <p class="text-xs text-gray-500 mb-2">Reverte Management</p>
+                <p class="text-xs text-gray-600">Enfatiza en la priorización estricta, rechazar tareas secundarias y proteger el tiempo de enfoque eliminando interrupciones digitales.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <span class="text-xs font-bold text-brandAccent bg-blue-50 px-2 py-1 rounded">Ítem 3 (2021)</span>
+                <h3 class="font-bold text-brandBlue mt-2 mb-1">Igor Bustinduy</h3>
+                <p class="text-xs text-gray-500 mb-2">Editorial UOC (Método ATM)</p>
+                <p class="text-xs text-gray-600">Propone la gestión ágil mediante ciclos temporales cortos y bloques semanales flexibles que absorben imprevistos.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <span class="text-xs font-bold text-brandAccent bg-blue-50 px-2 py-1 rounded">Ítem 4 (2023)</span>
+                <h3 class="font-bold text-brandBlue mt-2 mb-1">Luis Herrera Madiedo</h3>
+                <p class="text-xs text-gray-500 mb-2">IC Editorial</p>
+                <p class="text-xs text-gray-600">Conecta la logística y el control de los espacios físicos con el tiempo. El cronograma colapsa sin las herramientas adecuadas.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <span class="text-xs font-bold text-brandAccent bg-blue-50 px-2 py-1 rounded">Ítem 5 (2024)</span>
+                <h3 class="font-bold text-brandBlue mt-2 mb-1">Miquel Nadal</h3>
+                <p class="text-xs text-gray-500 mb-2">Desclée De Brouwer</p>
+                <p class="text-xs text-gray-600">Basado en neurociencia. Explica que la planificación reduce el estrés y entrena la mente para priorizar tareas complejas.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                <span class="text-xs font-bold text-brandAccent bg-blue-50 px-2 py-1 rounded">Ítem 6 (2024)</span>
+                <h3 class="font-bold text-brandBlue mt-2 mb-1">Marc Zao-Sanders</h3>
+                <p class="text-xs text-gray-500 mb-2">Editorial Tendencias (Timeboxing)</p>
+                <p class="text-xs text-gray-600">Introduce el Timeboxing: asignar bloques temporales definidos a una sola tarea, evitando la multitarea.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marco Teórico -->
+    <section id="marco" class="bg-gray-100 py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-brandBlue mb-8 text-center"> 4. Marco Teórico</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="font-bold text-xl text-brandBlue mb-3">Evolución Histórica y Científica</h3>
+                    <p class="text-sm text-gray-600 mb-4">
+                        Los antecedentes se remontan al siglo XX con Frederick W. Taylor. Hoy autores como Chavarría Briceño (2024) definen la gestión del tiempo como habilidades para optimizar recursos.
+                    </p>
+                    <p class="text-sm text-gray-600">
+                        El marco actual se apoya en Miquel Nadal (neurociencia y funciones ejecutivas) y Marc Zao-Sanders (Timeboxing contra la fatiga por interrupciones).
+                    </p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800" alt="Neurociencia y estudio" class="rounded-xl shadow-md border border-gray-200 w-full h-64 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodología -->
+    <section id="metodologia" class="max-w-6xl mx-auto py-16 px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-brandBlue mb-6 text-center"> 5. Diseño Metodológico</h2>
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 md:p-12">
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-5 bg-blue-50 rounded-xl border border-blue-100">
+                    <h3 class="font-bold text-brandBlue mb-2">Enfoque y Nivel</h3>
+                    <p class="text-sm text-gray-600"><strong>Cualitativo y Explicativo:</strong> Permite comprender fenómenos sociales y establecer causas de una inadecuada gestión del tiempo.</p>
+                </div>
+                <div class="p-5 bg-blue-50 rounded-xl border border-blue-100">
+                    <h3 class="font-bold text-brandBlue mb-2">Diseño y Población</h3>
+                    <p class="text-sm text-gray-600"><strong>De campo y transversal:</strong> Población de 12 estudiantes de décimo. Muestra final de 7 estudiantes por limitaciones de consentimientos.</p>
+                </div>
+                <div class="p-5 bg-blue-50 rounded-xl border border-blue-100">
+                    <h3 class="font-bold text-brandBlue mb-2">Técnica e Instrumento</h3>
+                    <p class="text-sm text-gray-600"><strong>Entrevista semiestructurada:</strong> Evaluada por psicólogos y transcrita mediante herramientas digitales (TurboScribe / Sonix).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resultados y Gráficas Estadísticas -->
+    <section id="resultados" class="bg-gray-100 py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-brandBlue mb-4 text-center"> 6. Resultados y Análisis de Datos</h2>
+            <p class="text-center text-gray-600 mb-10 text-sm">A partir de las entrevistas aplicadas, se tabularon patrones de respuesta en tres áreas críticas:</p>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-10">
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="font-bold text-brandBlue mb-4 text-center">Factores de Procrastinación</h3>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex justify-between items-center"><span>Desidia / Pereza</span> <span class="font-bold text-red-600">45%</span></li>
+                        <li class="flex justify-between items-center"><span>Uso de Celular y Redes</span> <span class="font-bold text-purple-600">30%</span></li>
+                        <li class="flex justify-between items-center"><span>Percepción de Dificultad</span> <span class="font-bold text-blue-600">15%</span></li>
+                        <li class="flex justify-between items-center"><span>Compromisos Sociales</span> <span class="font-bold text-gray-600">10%</span></li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="font-bold text-brandBlue mb-4 text-center">Criterios de Priorización</h3>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex justify-between items-center"><span>Urgencia / Fecha Límite</span> <span class="font-bold text-blue-600">35%</span></li>
+                        <li class="flex justify-between items-center"><span>Dificultad del Trabajo</span> <span class="font-bold text-green-600">30%</span></li>
+                        <li class="flex justify-between items-center"><span>Compromiso previo / Tema</span> <span class="font-bold text-indigo-600">20%</span></li>
+                        <li class="flex justify-between items-center"><span>Tiempo Disponible</span> <span class="font-bold text-orange-600">15%</span></li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="font-bold text-brandBlue mb-4 text-center">Estrategias Propuestas</h3>
+                    <ul class="space-y-3 text-sm text-gray-600">
+                        <li class="flex justify-between items-center"><span>Creación de Horarios/Rutinas</span> <span class="font-bold text-orange-600">40%</span></li>
+                        <li class="flex justify-between items-center"><span>Eliminar Distractores Digitales</span> <span class="font-bold text-purple-600">25%</span></li>
+                        <li class="flex justify-between items-center"><span>Mayor Atención en Clases</span> <span class="font-bold text-blue-600">20%</span></li>
+                        <li class="flex justify-between items-center"><span>Anticipación de Tareas</span> <span class="font-bold text-green-600">15%</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-brandBlue text-white p-8 rounded-2xl shadow-lg flex flex-col md:flex-row items-center gap-6">
+                <div>
+                    <h3 class="text-xl font-bold mb-3"> Hallazgo Sorprendente</h3>
+                    <p class="text-blue-100 text-sm">
+                        Se descubrió que los estudiantes no solo organizan su tiempo según el reloj, sino que dependen fuertemente de la <strong>comprensión previa del tema</strong>. Muchos consultan videos educativos, realizan ejercicios previos o buscan asesoría externa antes de comprometerse a realizar la tarea de matemáticas. Esto demuestra que la gestión del tiempo está profundamente entrelazada con el dominio cognitivo de la materia.
+                    </p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&q=80&w=400" alt="Matemáticas y análisis" class="rounded-xl w-48 h-36 object-cover shadow-md flex-shrink-0">
+            </div>
+        </div>
+    </section>
+
+    <!-- Nueva Sección: 10 Consejos sobre Gestión del Tiempo -->
+    <section id="consejos" class="max-w-6xl mx-auto py-16 px-4">
+        <h2 class="text-2xl md:text-3xl font-bold text-brandBlue mb-3 text-center"> 7. Decálogo: 10 Consejos Clave para la Gestión del Tiempo en Matemáticas</h2>
+        <p class="text-center text-gray-600 mb-10 text-sm">Basado en las conclusiones del TSG, la neurociencia y las recomendaciones de Zao-Sanders y Nadal:</p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+                <span class="text-2xl font-black text-brandAccent">01</span>
+                <h3 class="font-bold text-brandBlue mt-1 mb-2">Aplica la técnica de Timeboxing</h3>
+                <p class="text-xs text-gray-600">Define bloques de tiempo estrictos (ej. 45 minutos) dedicados exclusivamente a resolver ejercicios de trigonometría sin cambiar de actividad.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+                <span class="text-2xl font-black text-brandAccent">02</span>
+                <h3 class="font-bold text-brandBlue mt-1 mb-2">Aísla los distractores digitales</h3>
+                <p class="text-xs text-gray-600">Coloca el teléfono en modo avión o en otra habitación mientras estudias. El 30% de la procrastinación se origina por notificaciones en redes.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+                <span class="text-2xl font-black text-brandAccent">03</span>
+                <h3 class="font-bold text-brandBlue mt-1 mb-2">Comprende antes de memorizar</h3>
+                <p class="text-xs text-gray-600">Si un tema de matemáticas es complejo, revisa un video explicativo o apunta dudas antes de intentar resolver la tarea; esto reduce el bloqueo mental.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+                <span class="text-2xl font-black text-brandAccent">04</span>
+                <h3 class="font-bold text-brandBlue mt-1 mb-2">Prioriza por impacto y urgencia</h3>
+                <p class="text-xs text-gray-600">Aborda los ejercicios más difíciles o de entrega más próxima cuando tu nivel de energía mental sea más alto (generalmente en la mañana o tarde temprana).</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+                <span class="text-2xl font-black text-brandAccent">05</span>
+                <h3 class="font-bold text-brandBlue mt-1 mb-2">Divide las tareas grandes</h3>
+                <p class="text-xs text-gray-600">No dejes un taller largo de matemáticas para el último día. Divídelo en pequeños bloques diarios de 3 o 4 puntos.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+                <span class="text-2xl font-black text-brandAccent">06</span>
+                <h3 class="font-bold text-brandBlue mt-1 mb-2">Prepara tu espacio de trabajo</h3>
+                <p class="text-xs text-gray-600">Ten a la mano calculadora, cuadernos, regla y lapiceros antes de iniciar. Buscar materiales a mitad de estudio rompe tu concentración.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+                <span class="text-2xl font-black text-brandAccent">07</span>
+                <h3 class="font-bold text-brandBlue mt-1 mb-2">Utiliza la técnica Pomodoro</h3>
+                <p class="text-xs text-gray-600">Estudia con máxima concentración durante 25 minutos y descansa 5. Esto previene la fatiga cognitiva en asignaturas de alta lógica.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+                <span class="text-2xl font-black text-brandAccent">08</span>
+                <h3 class="font-bold text-brandBlue mt-1 mb-2">Registra tus avances en una agenda</h3>
+                <p class="text-xs text-gray-600">Anota fechas de exámenes y entregas con antelación visual. Ver los plazos reduce la ansiedad y previene sorpresas de última hora.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition">
+                <span class="text-2xl font-black text-brandAccent">09</span>
+                <h3 class="font-bold text-brandBlue mt-1 mb-2">Establece pausas activas reales</h3>
+                <p class="text-xs text-gray-600">Durante los descansos, aléjate de las pantallas: camina, estira o hidrátate. El cerebro necesita desconectarse para asimilar conceptos abstractos.</p>
+            </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200 hover:shadow-md transition md:col-span-2 lg:col-span-1">
+                <span class="text-2xl font-black text-brandAccent">10</span>
+                <h3 class="font-bold text-brandBlue mt-1 mb-2">Sé constante, no perfecto</h3>
+                <p class="text-xs text-gray-600">La gestión del tiempo es un hábito que se entrena. Si un día fallas tu horario, reajústalo al día siguiente sin rendirte ni abandonar tu meta.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recursos y Presupuesto -->
+    <section id="recursos" class="bg-gray-100 py-16 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-bold text-brandBlue mb-8 text-center"> 8. Recursos y Presupuesto Financiero</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="font-bold text-lg text-brandBlue mb-4">Herramientas Digitales y Tecnológicas</h3>
+                    <ul class="space-y-2 text-sm text-gray-600 list-disc pl-5">
+                        <li><strong>Google Workspace:</strong> Redacción bajo normas APA y tabulación de datos.</li>
+                        <li><strong>Canva:</strong> Diseño de soportes visuales, cronogramas y diagramas.</li>
+                        <li><strong>TurboScribe / Sonix:</strong> Transcripción automatizada de audios de entrevistas.</li>
+                        <li><strong>Biblioteca Luis Ángel Arango (BLAA):</strong> Búsqueda especializada de fuentes académicas.</li>
+                        <li><strong>Gemini:</strong> Optimización de conectores, redacción y formalización de ideas.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+                    <h3 class="font-bold text-lg text-brandBlue mb-4">Presupuesto Total: $519.000 COP</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><strong>Resma de papel bond y copias:</strong> $22.850 COP</li>
+                        <li><strong>Bolígrafos y cuadernos de campo:</strong> $9.000 COP</li>
+                        <li><strong>Servicio de Internet (10 meses):</strong> $450.000 COP</li>
+                        <li><strong>Transporte y Desplazamientos:</strong> $21.000 COP</li>
+                        <li><strong>Transcriptor de Entrevistas:</strong> $32.000 COP</li>
+                        <li class="pt-3 border-t mt-2 font-bold text-brandBlue">Financiación: Recursos propios ($44.000) | Apoyo padres ($475.000)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia Personal -->
+    <section id="experiencia" class="max-w-6xl mx-auto py-16 px-4">
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-200 p-8 md:p-12">
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+                <div class="md:col-span-2">
+                    <h2 class="text-2xl md:text-3xl font-bold text-brandBlue mb-6"> 9. Experiencia Personal (Grado 11A)</h2>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Iniciamos este proceso con ideas muy ingenuas, pensando que investigar era simplemente redactar unas preguntas y obtener respuestas rápidas. Sin embargo, nos enfrentamos a la cruda realidad metodológica y legal: la reducción de nuestra muestra de 12 a 7 estudiantes por falta de firmas en los consentimientos informados nos enseñó el valor absoluto de la ética investigativa.
+                    </p>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Analizar las transcripciones y contrastarlas con autores como Miquel Nadal y Marc Zao-Sanders fue un reto complejo que puso a prueba nuestra propia capacidad de organizar el tiempo frente a las exigencias de undécimo grado. Aprendimos a trabajar en equipo de manera real y a entender que la investigación es un proceso de construcción constante.
+                    </p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=600" alt="Estudiantes graduandos" class="rounded-xl shadow-md border border-gray-100 w-full h-56 object-cover">
+                </div>
+            </div>
+            <div class="bg-blue-50 border-l-4 border-brandAccent p-4 text-sm text-gray-700 italic mt-6">
+                "Recomendamos a los futuros estudiantes no temerle a la imprevisibilidad, gestionar sus tiempos con rigor desde el primer día y aprovechar cada dificultad como una oportunidad de aprendizaje." — Cristian Camilo Barrero & Juan José Jagua (11A).
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer class="bg-brandDark text-white py-8 text-center text-sm">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>© 2026 - Colegio Cardenal Sancha, Bogotá | Trabajo Significativo de Grado (TSG)</p>
+            <p class="text-gray-400 text-xs mt-2">Página web intuitiva y completa desarrollada para el proyecto de investigación de grado undécimo.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
